@@ -36,6 +36,7 @@ import { defaultResponsiveContainerProps } from '../src/component/responsiveCont
 import { defaultCurveProps } from '../src/shape/Curve';
 import { defaultSunburstChartProps } from '../src/chart/SunburstChart';
 import { defaultDefaultTooltipContentProps } from '../src/component/DefaultTooltipContent';
+import { defaultLegendContentDefaultProps } from '../src/component/DefaultLegendContent';
 
 type ComponentMeta = {
   defaultProps: Record<string, unknown> | undefined;
@@ -52,6 +53,7 @@ export const componentMetaMap: Record<string, ComponentMeta> = {
   ComposedChart: { defaultProps: defaultCartesianChartProps },
   Curve: { defaultProps: defaultCurveProps },
   DefaultTooltipContent: { defaultProps: defaultDefaultTooltipContentProps },
+  DefaultLegendContent: { defaultProps: defaultLegendContentDefaultProps },
   ErrorBar: { defaultProps: errorBarDefaultProps },
   Funnel: { defaultProps: defaultFunnelProps },
   FunnelChart: { defaultProps: defaultCartesianChartProps },
